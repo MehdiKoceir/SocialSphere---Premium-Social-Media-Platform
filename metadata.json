@@ -1,0 +1,6 @@
+{
+  "name": "Sociably",
+  "description": "An intentional social chronicle and editorial network designed around the elegance of print typography, monochromatic portraits, and authentic literary monographs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

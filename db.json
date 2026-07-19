@@ -1,0 +1,233 @@
+{
+  "users": [
+    {
+      "id": "alice",
+      "username": "alice_vance",
+      "displayName": "Alice Vance",
+      "bio": "Lead UI/UX Designer @Linear. crafting pixel-perfect micro-interactions, dark mode systems, and responsive layouts. Let’s build the future together. 🚀⚡",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80",
+      "background": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80",
+      "followers": ["bob", "clara", "devon"],
+      "following": ["bob", "devon"],
+      "joinedDate": "May 2025",
+      "isOnline": true,
+      "statusText": "Designing layout grids 📐"
+    },
+    {
+      "id": "bob",
+      "username": "bob_miller",
+      "displayName": "Bob Miller",
+      "bio": "Senior Full Stack Architect. Optimized distributed servers, WebSockets, and database indexing. React, NodeJS, and TypeScript enthusiast. Powered by single-origin espresso. ☕💻",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&auto=format&fit=crop&q=80",
+      "background": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=800&auto=format&fit=crop&q=80",
+      "followers": ["alice", "devon"],
+      "following": ["alice", "clara"],
+      "joinedDate": "Jan 2025",
+      "isOnline": true,
+      "statusText": "Reviewing pull requests 🔍"
+    },
+    {
+      "id": "clara",
+      "username": "clara_smith",
+      "displayName": "Clara Smith",
+      "bio": "Travel Photographer & Creative Director. Documenting natural wonders, architecture, and moody cyberpunk cityscapes. Adventure is out there! 🗻📸🌌",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&auto=format&fit=crop&q=80",
+      "background": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop&q=80",
+      "followers": ["bob"],
+      "following": ["alice", "bob"],
+      "joinedDate": "Mar 2026",
+      "isOnline": false,
+      "statusText": "In transit ✈️"
+    },
+    {
+      "id": "devon",
+      "username": "devon_creates",
+      "displayName": "Devon Jones",
+      "bio": "3D Procedural Artist & Indie Game Developer. Shader code enthusiast, WebGL experiments, and immersive physics-based animations. 🎮🎨🌀",
+      "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=200&auto=format&fit=crop&q=80",
+      "background": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800&auto=format&fit=crop&q=80",
+      "followers": ["alice"],
+      "following": ["alice", "bob"],
+      "joinedDate": "Oct 2025",
+      "isOnline": true,
+      "statusText": "Compiling shaders... 🔥"
+    }
+  ],
+  "posts": [
+    {
+      "id": "post-1",
+      "userId": "bob",
+      "username": "bob_miller",
+      "userDisplayName": "Bob Miller",
+      "userAvatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&auto=format&fit=crop&q=80",
+      "content": "Just deployed the new Vite 6 server module to staging. The hot reload performance is outstanding and compile sizes dropped by 18% with smart tree-shaking configurations. Highly recommend checking out the new rollup-plugin pipeline! ⚡🔥",
+      "mediaUrls": [
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1618401471353-b98aedd07871?w=800&auto=format&fit=crop&q=80"
+      ],
+      "timestamp": "2026-07-18T08:12:00.000Z",
+      "likes": ["alice", "clara"],
+      "saves": ["alice"],
+      "reactions": {
+        "🚀": ["alice", "devon"],
+        "🔥": ["clara"]
+      },
+      "tags": ["coding", "vite", "developer"],
+      "comments": [
+        {
+          "id": "comment-11",
+          "postId": "post-1",
+          "userId": "alice",
+          "username": "alice_vance",
+          "userDisplayName": "Alice Vance",
+          "userAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80",
+          "content": "This is incredible speed! Did you configure custom chunk splits for heavy dependencies?",
+          "timestamp": "2026-07-18T08:32:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "post-2",
+      "userId": "clara",
+      "username": "clara_smith",
+      "userDisplayName": "Clara Smith",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&auto=format&fit=crop&q=80",
+      "content": "Chasing the perfect blue hour in Neo-Tokyo. The neon reflections off the asphalt after a light autumn rain create the ultimate cyberpunk mood. 🌃🇯🇵✨",
+      "mediaUrls": [
+        "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800&auto=format&fit=crop&q=80"
+      ],
+      "timestamp": "2026-07-18T06:15:00.000Z",
+      "likes": ["bob", "alice", "devon"],
+      "saves": ["bob"],
+      "reactions": {
+        "😍": ["alice", "bob"],
+        "📸": ["devon"]
+      },
+      "tags": ["photography", "tokyo", "cyberpunk"],
+      "comments": [
+        {
+          "id": "comment-21",
+          "postId": "post-2",
+          "userId": "devon",
+          "username": "devon_creates",
+          "userDisplayName": "Devon Jones",
+          "userAvatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=200&auto=format&fit=crop&q=80",
+          "content": "The depth of field is flawless here Clara! What focal length did you use for this shot?",
+          "timestamp": "2026-07-18T06:30:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "post-3",
+      "userId": "alice",
+      "username": "alice_vance",
+      "userDisplayName": "Alice Vance",
+      "userAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80",
+      "content": "Quick note on premium dark theme interfaces: A true premium UI shouldn't be pure black. Use depth mapping with subtle indigo and slate shifts (e.g. #09090b to #18181b), layer glassmorphism with radial borders, and use high-contrast emerald or royal blue for core telemetry alerts. Precision is the ultimate differentiator! 🎨🖤✨",
+      "timestamp": "2026-07-17T22:30:00.000Z",
+      "likes": ["bob", "devon"],
+      "saves": [],
+      "reactions": {
+        "📐": ["bob"],
+        "🚀": ["devon"]
+      },
+      "tags": ["design", "uiux", "startup"],
+      "comments": []
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1",
+      "senderId": "bob",
+      "receiverId": "alice",
+      "content": "Hey Alice! Did you have a chance to look at the dashboard mockups I pushed to GitHub?",
+      "timestamp": "2026-07-18T08:00:00.000Z",
+      "isSeen": true
+    },
+    {
+      "id": "msg-2",
+      "senderId": "alice",
+      "receiverId": "bob",
+      "content": "Yes Bob! They look extremely polished. I love the glassmorphic analytics widgets. I think we should add a small sparkline chart for daily views as well.",
+      "timestamp": "2026-07-18T08:15:00.000Z",
+      "isSeen": true
+    },
+    {
+      "id": "msg-3",
+      "senderId": "bob",
+      "receiverId": "alice",
+      "content": "That is a fantastic idea. Let me code a custom SVG Sparkline that pulls from our database metrics. Check out this draft voice note of how we can pitch it!",
+      "timestamp": "2026-07-18T08:30:00.000Z",
+      "isSeen": true,
+      "isVoiceNote": true,
+      "voiceDuration": "0:12",
+      "voiceWaveform": [20, 45, 12, 80, 50, 34, 90, 44, 23, 76, 12, 45, 87, 54, 10, 32, 65, 87, 23, 11]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "alice",
+      "senderId": "bob",
+      "senderName": "Bob Miller",
+      "senderAvatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&auto=format&fit=crop&q=80",
+      "type": "like",
+      "postId": "post-3",
+      "timestamp": "2026-07-18T09:00:00.000Z",
+      "isRead": false,
+      "detailText": "liked your monograph on premium dark themes."
+    },
+    {
+      "id": "notif-2",
+      "userId": "alice",
+      "senderId": "clara",
+      "senderName": "Clara Smith",
+      "senderAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&auto=format&fit=crop&q=80",
+      "type": "comment",
+      "postId": "post-3",
+      "timestamp": "2026-07-18T08:45:00.000Z",
+      "isRead": true,
+      "detailText": "commented: \"Exactly what we needed! Incorporating this into the print catalog layout.\""
+    },
+    {
+      "id": "notif-3",
+      "userId": "alice",
+      "senderId": "devon",
+      "senderName": "Devon Jones",
+      "senderAvatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=200&auto=format&fit=crop&q=80",
+      "type": "follow",
+      "timestamp": "2026-07-18T07:12:00.000Z",
+      "isRead": true,
+      "detailText": "started following your architectural designs."
+    }
+  ],
+  "stories": [
+    {
+      "id": "story-1",
+      "userId": "alice",
+      "username": "alice_vance",
+      "userDisplayName": "Alice Vance",
+      "userAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80",
+      "mediaUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80",
+      "timestamp": "2026-07-18T07:30:00.000Z"
+    },
+    {
+      "id": "story-2",
+      "userId": "clara",
+      "username": "clara_smith",
+      "userDisplayName": "Clara Smith",
+      "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&auto=format&fit=crop&q=80",
+      "mediaUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop&q=80",
+      "timestamp": "2026-07-18T08:45:00.000Z"
+    },
+    {
+      "id": "story-3",
+      "userId": "devon",
+      "username": "devon_creates",
+      "userDisplayName": "Devon Jones",
+      "userAvatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=200&auto=format&fit=crop&q=80",
+      "mediaUrl": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800&auto=format&fit=crop&q=80",
+      "timestamp": "2026-07-18T05:30:00.000Z"
+    }
+  ]
+}
